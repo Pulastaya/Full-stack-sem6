@@ -1,0 +1,79 @@
+/* Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+/* Main Wrapper */
+.wrapper {
+  text-align: center;
+  margin-top: 120px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Value Display */
+.display {
+  font-size: 2rem;
+  color: #2d3748;
+  margin-bottom: 30px;
+}
+
+/* Button Container */
+.controls {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Action Buttons */
+.action-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.action-btn.add {
+  background-color: #10b981;
+  color: white;
+}
+
+.action-btn.add:hover {
+  background-color: #059669;
+}
+
+.action-btn.subtract {
+  background-color: #ef4444;
+  color: white;
+}
+
+.action-btn.subtract:hover {
+  background-color: #dc2626;
+}
+
+.action-btn.clear {
+  background-color: #6b7280;
+  color: white;
+}
+
+.action-btn.clear:hover {
+  background-color: #4b5563;
+}

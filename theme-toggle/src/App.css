@@ -1,0 +1,87 @@
+/* Base Container Styles */
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+  font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+}
+
+/* Content Box */
+.content {
+  text-align: center;
+  padding: 50px;
+  border-radius: 16px;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Light Mode Styles */
+.container.light {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  color: #1a1a2e;
+}
+
+.container.light .content {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode Styles */
+.container.dark {
+  background: linear-gradient(135deg, #1e1e2e 0%, #2d2d44 100%);
+  color: #e2e8f0;
+}
+
+.container.dark .content {
+  background: rgba(45, 45, 68, 0.8);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+/* Description Text */
+.description {
+  font-size: 1.1rem;
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+/* Toggle Button */
+button {
+  margin-top: 10px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Button in Light Mode */
+.container.light button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+}
+
+.container.light button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Button in Dark Mode */
+.container.dark button {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: #ffffff;
+}
+
+.container.dark button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(245, 87, 108, 0.4);
+}
